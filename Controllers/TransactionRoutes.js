@@ -24,7 +24,7 @@ router.get('/transactions/:id', (req, res) => {
 
 router.post('/transactions', (req, res) => {
   transactions.push(req.body);
-  res.json(logs);
+  res.json(transactions);
 });
 
 router.put('/transactions/:id', (req, res) => {
